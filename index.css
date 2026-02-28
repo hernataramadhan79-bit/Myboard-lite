@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-slate-800 antialiased h-screen overflow-hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  }
+}
+
+
+/* Custom scrollbar class used in the app */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  body {
+    visibility: hidden;
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Only show the receipt container */
+  .print-only,
+  .print-only * {
+    visibility: visible;
+  }
+
+  .print-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block !important;
+  }
+
+  .print-receipt-container {
+    width: 80mm !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 10px;
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Reset all colors for printing */
+  .print-only * {
+    color: black !important;
+    background-color: transparent !important;
+  }
+}
