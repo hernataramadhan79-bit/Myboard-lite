@@ -1,7 +1,7 @@
 # MyBoard Lite
 
 <div align="center">
-<img width="1200" height="475" alt="MyBoard Lite Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="MyBoard Lite Banner" src="D:\WebApps\myboard-lite\public\banner.png" />
 </div>
 
 MyBoard Lite adalah aplikasi Point of Sale (POS) dan manajemen inventaris berbasis web yang dirancang untuk membantu pengelolaan toko dengan lebih efisien. Aplikasi ini menyediakan fitur lengkap untuk transaksi penjualan, pengelolaan stok barang, laporan penjualan, dan pengaturan sistem.
